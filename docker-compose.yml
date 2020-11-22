@@ -1,0 +1,30 @@
+version: '3.1'
+
+services:
+    postgres:
+        image: postgres
+        ports:
+            - 5001:5432
+        networks:
+            - pgnetwork
+        hostname: postgres
+        environment:
+            - POSTGRES_PASSWORD=pass
+            - POSTGRES_USER=usr
+            - POSTGRES_DB=work_org
+    
+    pgadmin:
+        image: dpage/pgadmin4
+        ports:
+            - 5002:80
+        networks:
+            - pgnetwork
+        hostname: pgadmin4
+        environment:
+            - PGADMIN_DEFAULT_EMAIL=user@domain.com
+            - PGADMIN_DEFAULT_PASSWORD=SuperSecret
+
+networks:
+    pgnetwork:
+        driver: bridge
+    
