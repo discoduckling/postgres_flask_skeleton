@@ -6,6 +6,7 @@
 * flask
 
 ## to use
+First, create a virtual environment and start it.
 
 Install requirements
 ```shell script

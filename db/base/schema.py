@@ -1,10 +1,7 @@
-# import sys
-# sys.path.append('..')
-
 from datetime import datetime
 from sqlalchemy import Integer, Column, String, DateTime, ForeignKey
 from sqlalchemy.orm import relationship, backref
-from db.base.engine import Base, engine
+from engine import Base, engine
 
 
 class Department(Base):
