@@ -1,5 +1,5 @@
-from schema import Department, Employee
-from engine import session
+from db.base.schema import Department, Employee
+from db.base.engine import session
 
 
 engineering = Department(name="Engineering")

@@ -20,7 +20,7 @@ start dockerized postgres server
 
 initialize db data
 ```shell script
-python db/base/initialize_db.py
+python initialize_db.py
 ```
 
 run flask app

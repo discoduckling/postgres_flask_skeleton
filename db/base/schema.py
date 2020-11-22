@@ -1,7 +1,7 @@
 from datetime import datetime
 from sqlalchemy import Integer, Column, String, DateTime, ForeignKey
 from sqlalchemy.orm import relationship, backref
-from engine import Base, engine
+from db.base.engine import Base, engine
 
 
 class Department(Base):
